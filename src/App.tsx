@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {lazy} from 'react';
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import ThemeProvider from "./components/generic/ThemeContext";
+import ScreenProvider from "./components/generic/ScreenContext";
+import AuthProvider from "./components/generic/AuthContext";
+
+const Home = lazy(() => import("./components/pages/Home"))
+const Layout = lazy(() => import("./components/layout/Layout"))
+const Coding = lazy(() => import("./components/pages/Coding"))
+const Consulting = lazy(() => import("./components/pages/Consulting"))
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      return (
+          <Router>
+              <ThemeProvider>
+                  <ScreenProvider>
+                      <AuthProvider>
+                          <Layout>
+                              <Routes>
+                                  <Route path={"*"} element={<Home />} />
+                                  <Route path={"/coding"} element={<Coding />} />
+                                  <Route path={"/consulting"} element={<Consulting />} />
+                              </Routes>
+                          </Layout>
+                      </AuthProvider>
+                  </ScreenProvider>
+              </ThemeProvider>
+          </Router>
+      );
 }
 
 export default App;

@@ -1,0 +1,117 @@
+@import "~@fontsource/anek-latin/400.css";
+@import "~@fontsource/anek-latin/700.css";
+@import "~@fontsource/anek-latin/800.css";
+@import "~@fontsource/anek-latin/variable.css";
+@import "~@fontsource/expletus-sans/400.css";
+@import "~@fontsource/expletus-sans/700.css";
+@import "~@fontsource/expletus-sans/variable.css";
+@import "~@fontsource/oxanium/variable.css";
+@import "~@fontsource/oxanium/400.css";
+@import "~@fontsource/oxanium/700.css";
+@import "~@fontsource/oxanium/800.css";
+@import "~@fontsource/urbanist/variable.css";
+@import "~@fontsource/urbanist/400.css";
+@import "~@fontsource/urbanist/700.css";
+@import "~@fontsource/urbanist/800.css";
+@import "~@fontsource/urbanist/900.css";
+
+$lighterpurple: #b996ff;
+$lightpurple: #9966ff;
+$purple: #672fd6;
+
+$lighterblue: #5c97ff;
+$lightblue: #3575e6;
+$blue: #225ec7;
+
+.blue {
+    color: $blue;
+}
+
+.lightblue {
+    color: $lightblue;
+}
+
+.lighterblue {
+    color: $lighterblue;
+}
+
+.purple {
+    color: $purple;
+}
+
+.lightpurple {
+    color: $lightpurple;
+}
+
+.lighterpurple {
+    color: $lighterpurple;
+}
+
+
+$white: #e8f9fd;
+
+$navbar-height: 4rem;
+
+$width_large: 75rem;
+$width_medium: calc(5rem + 80%);
+$width_small: 90%;
+
+.document{
+    @media (max-width: 639px) {
+        width: $width_small;
+    }
+    @media (min-width: 640px) and (max-width: 1279px) {
+        width: $width_medium;
+    }
+    @media (min-width: 1280px) {
+        width: $width_large;
+    }
+}
+
+.font-turboheader {
+    @media (max-width: 639px) {
+        font-size: 250%;
+    }
+    @media (min-width: 640px) and (max-width: 1279px) {
+        font-size: 350%;
+    }
+    @media (min-width: 1280px) {
+        font-size: 400%;
+    }
+}
+
+.font-header {
+    @media (max-width: 639px) {
+        font-size: 150%;
+    }
+    @media (min-width: 640px) and (max-width: 1279px) {
+        font-size: 200%;
+    }
+    @media (min-width: 1280px) {
+        font-size: 250%;
+    }
+}
+
+.font-subheader {
+    @media (max-width: 639px) {
+        font-size: 100%;
+    }
+    @media (min-width: 640px) and (max-width: 1279px) {
+        font-size: 125%;
+    }
+    @media (min-width: 1280px) {
+        font-size: 150%;
+    }
+}
+
+.font-miniheader {
+    @media (max-width: 639px) {
+        font-size: 90%;
+    }
+    @media (min-width: 640px) and (max-width: 1279px) {
+        font-size: 100%;
+    }
+    @media (min-width: 1280px) {
+        font-size: 100%;
+    }
+}

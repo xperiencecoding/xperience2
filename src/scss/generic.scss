@@ -1,0 +1,91 @@
+.apex-loading {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background: rgb(103,47,214);
+    background: linear-gradient(135deg, rgba(153,47,214,1) 0%, rgba(72,121,185,1) 100%);
+    overflow: hidden;
+
+    .middle {
+        position: relative;
+        z-index: 1;
+        height: 8rem;
+        padding: 0 4rem;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+
+        > *:first-child {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .top-half {
+        width: 100vw;
+        height: calc(50% - 4rem);
+        background: black;
+        position: absolute;
+        top: -50%;
+    }
+
+    .bottom-half {
+        width: 100vw;
+        height: calc(50% - 4rem);
+        background: black;
+        position: absolute;
+        bottom: -50%;
+    }
+}
+
+.apex-brand {
+    cursor: pointer;
+    background: black;
+    color: white;
+    padding: 0 0.75rem;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .captions {
+        margin-left: 0.5rem;
+        letter-spacing: 0.5px;
+    }
+}
+
+.apex-progress {
+    position: relative;
+    overflow: hidden;
+    height: 0.5rem;
+    width: 12rem;
+    border: 1px solid black;
+
+    .bar {
+        position: absolute;
+        background: black;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.particle-wrapper {
+    position: relative;
+    overflow: hidden;
+    .bump {
+        z-index: 2;
+    }
+}
+
+.particle {
+    position: absolute;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+}

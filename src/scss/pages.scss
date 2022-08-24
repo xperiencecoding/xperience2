@@ -1,0 +1,130 @@
+.apex-home {
+    color: white;
+    min-height: 100vh;
+
+    .document {
+
+        padding: 8rem 0;
+
+        .top-half, .bottom-half {
+            cursor: pointer;
+            overflow: hidden;
+            background-color: rgba(255, 255, 255, 0.08);
+            height: 24rem;
+            margin: 2rem 0;
+
+            .text {
+                padding: 2rem;
+            }
+
+            h1 {
+                margin: 0;
+            }
+
+            h6 {
+                margin: 0.5rem 0;
+            }
+
+            ul {
+                margin: 0;
+
+                li {
+                    margin: 1rem 0;
+                }
+            }
+            img {
+                height: 100%;
+                width: 50%;
+                object-fit: cover;
+            }
+        }
+
+        .top-half {
+            // clip-path: polygon(0 0, 100% 0, 100% calc(100% - 4rem), 0 100%);
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
+            margin-right: 4rem;
+
+            img {
+                clip-path: polygon(1rem 0, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+
+        .bottom-half {
+            // clip-path: polygon(0 4rem, 100% 0, 100% 100%, 0 100%);
+            border-bottom-right-radius: 2rem;
+            border-bottom-left-radius: 2rem;
+            margin-left: 4rem;
+
+            img {
+                clip-path: polygon(0 0, 100% 0, calc(100% - 1rem) 100%, 0 100%);
+            }
+
+            ul {
+                direction: rtl;
+            }
+        }
+    }
+}
+
+.apex-coding, .apex-consulting {
+    color: white;
+    min-height: 100vh;
+
+    padding: 8rem 0 2rem;
+
+    .document {
+
+        background-color: rgba(255, 255, 255, 0.08);
+        border-radius: 2rem;
+        overflow: hidden;
+
+        >*:not(:first-child) {
+            margin-top: 2rem;
+        }
+
+        .explanation {
+            padding: 0 2rem;
+        }
+
+        .h0 {
+            letter-spacing: 1px;
+            margin: 0;
+            text-shadow: 0 0.25rem 0.5rem black;
+            cursor: pointer;
+
+            padding: 2rem;
+
+            .back {
+                position: absolute;
+                left: 2rem;
+                padding: 0 1rem;
+                border-radius: 1rem;
+            }
+        }
+
+        .list {
+            padding: 0 2rem;
+        }
+
+        ul {
+            margin: 0;
+            li {
+                margin: 1rem 0;
+            }
+        }
+
+        iframe {
+            width: 35%;
+            aspect-ratio: 3/2;
+        }
+
+        .click-to {
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.08);
+            padding: 2rem;
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+        }
+    }
+}
