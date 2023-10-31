@@ -40,6 +40,7 @@ function Home(props: {
                                 initial="inactive" animate="active" exit="inactive" whileHover={{boxShadow: "0 0 1rem white"}} tabIndex={0}
                                 onClick={() => advance("/coding")}
                     >
+                        
                         <div className="text col-ss h-100">
                             <h1 className="oxanium bold">
                                 Coding

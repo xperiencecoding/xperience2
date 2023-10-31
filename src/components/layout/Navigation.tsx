@@ -10,8 +10,36 @@ import {useLocation, useNavigate} from "react-router-dom";
 const data = [
     ["Coding", "/coding"],
     ["Consulting", "/consulting"],
+    ["Projects", "/projects"],
+    ["Team", "/team"],
+    ["Form", "/form"]
 ]
 
+const menuItems = [
+    {
+      title: 'Coding',
+      url: '/',
+    },
+    {
+      title: 'Consulting',
+      url: '/services',
+      submenu: [
+        {
+          title: 'web design',
+          url: 'web-design',
+        },
+        {
+          title: 'web development',
+          url: 'web-dev',
+        },
+        {
+          title: 'SEO',
+          url: 'seo',
+        },
+      ],
+    },
+  ];
+  
 function Navigation(props: {}) {
 
     const screen = useScreen()

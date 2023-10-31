@@ -84,7 +84,7 @@ function Consulting(props: {}) {
                         </ul>
                     </div>
                 </div>
-                <motion.div tabIndex={0} onClick={() => window.open("mailto:drshika.asher@vhhscougars.org")} className="click-to col-cc oxanium h6 bold w-100 text-centered" whileHover={{boxShadow: "0 0 1rem white"}}>
+                <motion.div tabIndex={0} onClick={() => window.open("mailto:adam.lueken@d128.org")} className="click-to col-cc oxanium h6 bold w-100 text-centered" whileHover={{boxShadow: "0 0 1rem white"}}>
                     Click to contact Adam Lueken (adam.lueken@d128.org) with more information.
                 </motion.div>
             </motion.div>

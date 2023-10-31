@@ -56,8 +56,8 @@ function Coding(props: {}) {
                         style={{border:0}} allowFullScreen={false} loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade" />
                 </div>
-                <motion.div tabIndex={0} onClick={() => window.open("mailto:drshika.asher@vhhscougars.org")} className="click-to col-cc oxanium h6 bold w-100 text-centered" whileHover={{boxShadow: "0 0 1rem white"}}>
-                    Click to contact Drshika Asher (drshika.asher@vhhscougars.org) for more information.
+                <motion.div tabIndex={0} onClick={() => window.open("mailto:adam.lueken@d128.org")} className="click-to col-cc oxanium h6 bold w-100 text-centered" whileHover={{boxShadow: "0 0 1rem white"}}>
+                    Click to contact Adam Lueken (adam.lueken@d128.org) for more information.
                 </motion.div>
             </motion.div>
         }
